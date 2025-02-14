@@ -19,8 +19,8 @@ jobs:
       uses: moonpathbg/scp_uploader@latest
       with:
         source: dist/*
-        target: "~/sweetchiefs/"
+        target: "~/chiefs"
         host: ${{ secrets.WEB_SERVER_HOST }}
-        user: ${{ secrets.WEB_SERVER_USER }}
+        username: ${{ secrets.WEB_SERVER_USER }}
         key: ${{ secrets.WEB_SERVER_KEY }}
         port: 22
