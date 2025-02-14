@@ -1,0 +1,26 @@
+name: CD
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: node:23
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install packages
+      run: npm install
+    - name: Build assets
+      run: npm run build
+    - name: Deploy website
+      uses: moonpathbg/scp_uploader@latest
+      with:
+        source: dist/*
+        target: "~/sweetchiefs/"
+        host: ${{ secrets.WEB_SERVER_HOST }}
+        user: ${{ secrets.WEB_SERVER_USER }}
+        key: ${{ secrets.WEB_SERVER_KEY }}
+        port: 22
