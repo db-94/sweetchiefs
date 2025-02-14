@@ -1,5 +1,7 @@
 # Sweet Chiefs Website
 
+[![CD](https://github.com/db-94/sweetchiefs/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/db-94/sweetchiefs/actions/workflows/main.yml)
+
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-freelancer/master/LICENSE)
