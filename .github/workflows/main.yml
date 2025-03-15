@@ -28,4 +28,4 @@ jobs:
           host: ${{ secrets.WEB_SERVER_HOST }}
           username: ${{ secrets.WEB_SERVER_USER }}
           key: ${{ secrets.WEB_SERVER_KEY }}
-          port: 22`
+          port: 22
