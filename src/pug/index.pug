@@ -5,22 +5,38 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Sweet Chiefs hot chicken popup located in the puget sound.')
-        meta(name='author', content='DB 94')
+        meta(name='description', content='Sweet Chiefs is a hot chicken popup serving Nashville-style sandwiches and nuggs in the Puget Sound area. Find us at local markets and events.')
+        meta(name='author', content='Sweet Chiefs LLC')
 
         title Sweet Chiefs - Hot Chicken
 
+        // Canonical
+        link(rel='canonical', href='https://www.sweetchiefs.com/')
+
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        meta(property="og:title" content="Sweet Chiefs - Hot Chicken")
-        meta(property="og:image" content="https://www.sweetchiefs.com/assets/img/mauve_logo_white_text.png")
+
+        // Open Graph
+        meta(property='og:type', content='website')
+        meta(property='og:site_name', content='Sweet Chiefs')
+        meta(property='og:title', content='Sweet Chiefs - Hot Chicken')
+        meta(property='og:description', content='Sweet Chiefs is a hot chicken popup serving Nashville-style sandwiches and nuggs in the Puget Sound area. Find us at local markets and events.')
+        meta(property='og:url', content='https://www.sweetchiefs.com/')
+        meta(property='og:image', content='https://www.sweetchiefs.com/assets/img/mauve_logo_white_text.png')
+
+        // Twitter Card
+        meta(name='twitter:card', content='summary_large_image')
+        meta(name='twitter:title', content='Sweet Chiefs - Hot Chicken')
+        meta(name='twitter:description', content='Sweet Chiefs is a hot chicken popup serving Nashville-style sandwiches and nuggs in the Puget Sound area. Find us at local markets and events.')
+        meta(name='twitter:image', content='https://www.sweetchiefs.com/assets/img/mauve_logo_white_text.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
